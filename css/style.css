@@ -149,6 +149,9 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
     justify-content: space-between;
     align-items: center;
 }
+.navbar-logo a picture img{
+    max-width: 50px;
+}
 .navbar-list{
     display: flex;
     justify-content: center;
@@ -627,12 +630,71 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
 }
 /* ------------------------------------Contact Markup End-------------------------------- */
 /* ===================================Footer Markup Start=============================== */
-
-
-
-
-
-
+#footer-markup{
+    padding: 100px 0 20px;
+    background: url(/images/footerbg.jpg) no-repeat center;
+    background-size: cover;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-logo a picture img{
+    max-width: 120px;
+}
+.footer-summery{
+    font: 400 16px/20px var(--Default-Font);
+    color: var(--Background-Color);
+    max-width: 350px;
+    margin: 20px 0 30px;
+}
+.footer-social-title{
+    font: 600 24px/28px var(--Default-Font);
+    color: var(--Background-Color);
+    margin-bottom: 15px;
+}
+.footer-icon{
+    display: flex;
+    gap: 10px;
+}
+.footer-icon span{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background: var(--Background-Color);
+    font-size: 18px;
+    color: var(--Font-Color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+.footer-icon span:hover{
+    background: var(--Brand-Color);
+    color: white;
+    transform: translateY(-5px);
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+.footer-link{
+    font: 400 16px/20px var(--Default-Font);
+    color: white;
+    transition: all linear .3s;
+}
+.footer-link:hover{
+    transform: translateX(5px);
+    color: var(--Brand-Color);
+}
+.footer-link span i{
+    font-size: 12px;
+    margin-right: 2px;
+}
 
 
 
