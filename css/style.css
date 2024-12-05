@@ -632,7 +632,7 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
 /* ===================================Footer Markup Start=============================== */
 #footer-markup{
     padding: 100px 0 20px;
-    background: url(/images/footerbg.jpg) no-repeat center;
+    background: url(../images/footerbg.jpg) no-repeat center;
     background-size: cover;
 }
 .footer-row{
