@@ -27,15 +27,15 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
     padding: 12px 28px;
     border-radius: 50px;
     border: 2px solid transparent;
-    background: var(--Brand-Color);
+    background: var(--Brand-background);
     cursor: pointer;
     text-transform: uppercase;
     transition: all linear .3s;
 }
 .common-btn:hover{
     background: transparent;
-    border: 2px solid var(--Brand-Color);
-    color: var(--Brand-Color);
+    border: 2px solid var(--Brand-background);
+    color: var(--Brand-background);
 }
 .btn-icon i{
     margin-left: 5px;
@@ -45,12 +45,12 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
     transition: all linear .3s;
 }
 .common-btn:hover .btn-icon i{
-    color: var(--Brand-Color);
+    color: var(--Brand-background);
     transform: rotate(360deg);
 }
 .common-title span{
     font-size: 16px;
-    color: var(--Brand-Color);
+    color: var(--Brand-background);
 }
 .common-title{
     font: 500 16px/18px var(--Default-Font);
@@ -63,7 +63,8 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
     margin-top: 20px;
 }
 :root{
-    --Brand-Color : #007CFA;
+    --Brand-Color : #D0ECF3;
+    --Brand-background: #00165A;
     --Default-Font : "Yantramanav", sans-serif;
     --Background-Color : white;
     --Font-Color: black;
@@ -73,7 +74,7 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
 /* ===================================Header Markup Start=============================== */
 #header-markup{
     padding: 10px 0;
-    background: var(--Brand-Color);
+    background: var(--Brand-background);
 }
 .header-row{
     display: flex;
@@ -100,7 +101,7 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
 }
 .header-item span i{
     font-size: 16px;
-    color: #FFC702;
+    color: var(--Brand-Color);
 }
 .header-item .header-link{
     font: 400 16px/20px var(--Default-Font);
@@ -119,7 +120,7 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
     transition: all linear .3s;
 }
 .header-icon a i:hover{
-    color: #FFC702;
+    color: var(--Brand-Color);
 }
 
 /* ------------------------------------Header Markup End-------------------------------- */
@@ -165,14 +166,14 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
     position: relative;
 }
 .navbar-link:hover{
-    color: var(--Brand-Color);
+    color: var(--Brand-background);
 }
 .navbar-link::after{
     content: '';
     position: absolute;
     width: 0%;
-    height: 1px;
-    background: var(--Brand-Color);
+    height: 2px;
+    background: var(--Brand-background);
     bottom: 0%;
     right: 0%;
     opacity: 0;
@@ -270,6 +271,13 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
 .hero-button{
     margin-top: 20px;
 }
+.hero-button .common-btn:hover{
+    border: 2px solid var(--Brand-Color);
+    color: var(--Brand-Color);
+}
+.hero-button .common-btn:hover .btn-icon i{
+    color: var(--Brand-Color);
+}
 /* ------------------------------------Hero Markup End-------------------------------- */
 /* ===================================About-Us Markup Start=============================== */
 #about-us{
@@ -309,11 +317,11 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
     width: 70px;
     height: 70px;
     border-radius: 12px;
-    background: #f0f2f4;
+    background: var(--Brand-Color);
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: ;
+    box-shadow: 0px 0px 30px 0px rgba(203.00000000000003, 203.00000000000003, 203.00000000000003, 0.5);
 }
 .about-item-img picture img{
     width: 35px;
@@ -388,7 +396,7 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
     position: absolute;
     top: 50%;
     left: 55%;
-    background: var(--Brand-Color);
+    background: var(--Brand-background);
     height: 2px;
     width: 60px;
 }
@@ -472,7 +480,7 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
 .about-col-plus-icon {
     width: 40px;
     height: 40px;
-    background: #ededed;
+    background: var(--Brand-Color);
     border-radius: 100%;
     font-size: 16px;
     color: black;
@@ -518,11 +526,11 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
 }
 .team-col-heading:hover .about-col-plus-icon{
     transform: rotate(45deg);
-    background: var(--Brand-Color);
+    background: var(--Brand-background);
     color: white;
 }
 .team-all-icon span:hover{
-    background: var(--Brand-Color);
+    background: var(--Brand-background);
     color: white;
 }
 /* ------------------------------------Team Markup End-------------------------------- */
@@ -605,7 +613,7 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
     width: 100%;
     padding: 10px 12px;
     background: transparent;
-    border: 2px solid #93c0ed;
+    border: 2px solid var(--Brand-Color);
     font: 400 16px/20px var(--Default-Font);
     color: var(--Font-Color);
     border-radius: 12px;
@@ -621,7 +629,7 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
     width: 100%;
     padding: 10px 15px;
     background: transparent;
-    border: 2px solid #93c0ed;
+    border: 2px solid var(--Brand-Color);
     font: 400 16px/20px var(--Default-Font);
     color: var(--Font-Color);
     border-radius: 12px;
@@ -672,7 +680,7 @@ h1,h2,h3,h4,h5,h6,p,span,div,a{
     transition: all linear .3s;
 }
 .footer-icon span:hover{
-    background: var(--Brand-Color);
+    background: var(--Brand-background);
     color: white;
     transform: translateY(-5px);
 }
