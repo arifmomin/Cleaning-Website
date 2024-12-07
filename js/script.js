@@ -7,3 +7,17 @@ window.addEventListener('scroll', () =>{
         Navbar.classList.remove('navbar-fixed')
     }
 });
+
+const navbarMenu = document.querySelector('.navbar-menu-icon');
+const navbarCross = document.querySelector('.navbar-cross');
+const navbarRight = document.querySelector('.navbar-right');
+const navbarBg = document.querySelector('.navbar-bg');
+navbarMenu.addEventListener('click', () =>{
+    navbarRight.classList.add('navbar-Right-show');
+    navbarBg.style.display = 'block';
+});
+
+navbarCross.addEventListener('click', () =>{
+    navbarRight.classList.remove('navbar-Right-show');
+    navbarBg.style.display = 'none';
+})

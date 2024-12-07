@@ -1,0 +1,759 @@
+@media (min-width: 0px) and (max-width: 991px) {
+#Navbar {
+	padding: 10px 0;
+}
+.navbar-menu-icon{
+    display: flex;
+}
+.navbar-row {
+	justify-content: space-between;
+}
+.navbar-right{
+    position: absolute;
+    
+}
+.navbar-col {
+	margin-top: 50px;
+}
+.navbar-logo a picture img {
+	max-width: 80px;
+}
+.navbar-bg {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.50);
+	z-index: 99;
+	top: 0px;
+	left: 0px;
+    display: none;
+}
+.navbar-right {
+	position: fixed;
+	background: white;
+	padding: 20px 10px;
+	z-index: 9999;
+	flex-direction: column;
+	width: 85%;
+	left: 15%;
+	top: 0%;
+	height: 100vh;
+	z-index: 999;
+    justify-content: start;
+    display: none;
+}
+.navbar-cross{
+    display: block;
+    cursor: pointer;
+}
+.navbar-list {
+	flex-direction: column;
+    gap: 20px;
+}
+.navbar-button {
+	margin-top: 35px;
+}
+.navbar-Right-show{
+    display: flex;
+    animation: navbarSlide .5s linear;
+}
+@keyframes navbarSlide {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 15%;
+    }
+}
+.navbar-cross span i {
+	font-size: 25px;
+	color: red;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+}
+
+@media (max-width: 576px) {
+.container {
+    padding: 0 10px;
+}
+/* =============================Header Markup Start======================== */
+#header-markup {
+	padding: 5px 0;
+}
+.header-col {
+	flex-direction: column;
+	align-items: start;
+}
+.header-item {
+    padding: 0;
+	border-right: none;
+}
+.header-item span i {
+	font-size: 12px;
+}
+.header-item .header-link {
+	font: 400 10px/14px var(--Default-Font);
+}
+.header-col .header-item:nth-child(3) {
+	display: none;
+}
+.header-col:nth-child(2)  {
+	align-items: end;
+}
+.header-icon {
+	gap: 10px;
+}
+.header-icon a i {
+	font-size: 12px;
+}
+/* -----------------------------Header Markup End ------------------------ */
+/* =============================Hero Markup Start======================== */
+#hero-markup {
+	padding: 100px 0 50px;
+}
+.hero-first-star {
+	top: 40px;
+}
+.hero-secound-star {
+	bottom: 15%;
+	right: 10%;
+}
+@keyframes star{
+    0%{
+        transform: scale(.5);
+    }100%{
+         transform: scale(1);
+    }
+}
+.hero-heading-text {
+	font: 500 12px/16px var(--Default-Font);
+}
+.hero-heading-img {
+	width: 25px;
+	left: 140px;
+	top: -5px;
+}
+.hero-head {
+	font: 700 34px/1.2 var(--Default-Font);
+	margin: 15px 0 5px;
+}
+.hero-summery {
+	font: 400 13px/18px var(--Default-Font);
+}
+.common-btn {
+	font: 400 14px/20px var(--Default-Font);
+	padding: 10px 24px;
+}
+/* -----------------------------Hero Markup End ------------------------ */
+/* =============================About Markup Start======================== */
+#about-us {
+	padding: 50px 0;
+}
+.common-head {
+	font: 700 26px/1.2 var(--Default-Font);
+	margin-top: 10px;
+}
+.about-button {
+	margin-top: 20px;
+}
+.about-item{
+    align-items: center;
+    margin: 0 auto;
+}
+.about-item-summery{
+    text-align: center;
+}
+/* -----------------------------About Markup End ------------------------ */
+/* =============================Service Markup Start======================== */
+#service-markup {
+	padding: 50px 0;
+}
+.service-heading .common-head {
+	font-size: 26px;
+}
+.service-button{
+    margin-top: 20px;
+}
+.service-row {
+	gap: 15px;
+	margin-top: 50px;
+}
+.service-col {
+	padding: 20px;
+}
+.service-col-title {
+	font: 600 22px/28px var(--Default-Font);
+	margin: 10px 0 5px;
+}
+#about-us::after {
+    display: none;
+}
+/* -----------------------------Service Markup End ------------------------ */
+/* =============================Team Markup Start======================== */
+.team-head::before {
+	display: none;
+}
+.team-head::after {
+	display: none;
+}
+.team-img {
+	max-height: 270px;
+}
+/* -----------------------------Team Markup End ------------------------ */
+/* =============================Contact Markup Start======================== */
+#contact-markup {
+	padding: 50px 0;
+}
+.contact-col {
+	width: 100%;
+}
+.contact-icon i {
+	width: 50px;
+	height: 50px;
+}
+.contact-info-text h3 {
+	font: 600 18px/24px var(--Default-Font);
+}
+.contact-info-text a {
+	font: 400 14px/20px var(--Default-Font);
+    margin-top: 0;
+}
+.contact-form {
+	padding: 20px;
+	margin-top: 50px;
+}
+.contact-form h4 {
+	font: 600 22px/28px var(--Default-Font);
+}
+.contact-form h5 {
+	font: 400 14px/20px var(--Default-Font);
+	margin: 15px 0 25px;
+}
+.contact-form-item {
+	flex-basis: 100%;
+}
+/* -----------------------------Contact Markup End ------------------------ */
+/* =============================Footer Markup Start======================== */
+#footer-markup {
+	padding: 60px 0 20px;
+}
+.footer-logo a picture img {
+	max-width: 80px;
+}
+.footer-summery {
+	font: 400 14px/20px var(--Default-Font);
+	margin: 15px 0 25px;
+}
+.footer-social-title {
+	font: 600 18px/28px var(--Default-Font);
+	margin: 40px 0 10px;
+}
+.footer-icon span {
+	width: 40px;
+	height: 40px;
+}
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+.container {
+    max-width: 540px;
+    padding: 0 10px;
+}
+/* =============================Header Markup Start======================== */
+#header-markup {
+    padding: 5px 0;
+}
+.header-col {
+    gap: 10px;
+}
+.header-item {
+    padding: 0;
+    border-right: none;
+}
+.header-item span i {
+    font-size: 12px;
+}
+.header-item .header-link {
+    font: 400 12px/14px var(--Default-Font);
+}
+.header-col .header-item:nth-child(3) {
+    display: none;
+}
+.header-col:nth-child(2)  {
+    align-items: end;
+}
+.header-icon {
+    gap: 10px;
+}
+.header-icon {
+	margin-left: 5px;
+}
+.header-icon a i {
+    font-size: 12px;
+}
+.navbar-Right-show {
+    width: 60%;
+    left: 40%;
+}
+@keyframes navbarSlide {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 40%;
+    }
+}
+/* -----------------------------Header Markup End ------------------------ */
+/* =============================Hero Markup Start======================== */
+#hero-markup {
+	padding: 150px 0 100px;
+}
+.hero-first-star {
+    top: 40px;
+}
+.hero-secound-star {
+    bottom: 15%;
+    right: 10%;
+}
+@keyframes star{
+    0%{
+        transform: scale(.5);
+    }100%{
+         transform: scale(1);
+    }
+}
+.hero-head {
+	font: 700 50px/1.2 var(--Default-Font);
+}
+/* -----------------------------Hero Markup End ------------------------ */
+/* =============================About Markup Start======================== */
+#about-us {
+    padding: 50px 0;
+}
+.common-head {
+	font: 700 36px/1.2 var(--Default-Font);
+	margin-top: 10px;
+}
+.about-button {
+    margin-top: 20px;
+}
+.about-content {
+	justify-content: space-between;
+    gap: 20px 0;
+}
+.about-item-summery {
+	max-width: 250px;
+}
+/* -----------------------------About Markup End ------------------------ */
+/* =============================Service Markup Start======================== */
+#service-markup {
+    padding: 50px 0;
+}
+.service-heading .common-head {
+    font-size: 36px;
+}
+.service-button{
+    margin-top: 20px;
+}
+.service-row {
+    gap: 15px;
+    margin-top: 50px;
+}
+.service-col {
+    padding: 20px;
+}
+.service-col-title {
+    font: 600 22px/28px var(--Default-Font);
+    margin: 10px 0 5px;
+}
+#about-us::after {
+    display: none;
+}
+/* -----------------------------Service Markup End ------------------------ */
+/* =============================Team Markup Start======================== */
+.team-head::before {
+    display: none;
+}
+.team-head::after {
+    display: none;
+}
+.team-col {
+	max-width: 245px;
+}
+.team-img {
+	max-height: 240px;
+}
+/* -----------------------------Team Markup End ------------------------ */
+/* =============================Contact Markup Start======================== */
+#contact-markup {
+    padding: 50px 0;
+}
+.contact-col {
+    width: 100%;
+}
+.contact-icon i {
+    width: 50px;
+    height: 50px;
+}
+.contact-info-text h3 {
+    font: 600 18px/24px var(--Default-Font);
+}
+.contact-info-text a {
+    font: 400 14px/20px var(--Default-Font);
+    margin-top: 0;
+}
+.contact-form-item {
+	flex-basis: 47%;
+}
+/* -----------------------------Contact Markup End ------------------------ */
+/* =============================Footer Markup Start======================== */
+#footer-markup {
+    padding: 60px 0 20px;
+}
+.footer-logo a picture img {
+    max-width: 80px;
+}
+.footer-summery {
+    font: 400 14px/20px var(--Default-Font);
+    margin: 15px 0 25px;
+}
+.footer-social-title {
+    font: 600 18px/28px var(--Default-Font);
+    margin: 40px 0 10px;
+}
+.footer-icon span {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+/* -----------------------------Footer Markup End ------------------------ */
+/* =============================Header Markup Start======================== */
+
+/* -----------------------------Header Markup End ------------------------ */
+/* =============================Header Markup Start======================== */
+
+/* -----------------------------Header Markup End ------------------------ */
+/* =============================Header Markup Start======================== */
+
+/* -----------------------------Header Markup End ------------------------ */
+
+
+
+
+
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
+.container {
+    max-width: 740px;
+    padding: 0 10px;
+}
+/* =============================Header Markup Start======================== */
+.header-col {
+    gap: 10px;
+}
+.header-item {
+    padding: 0;
+    border-right: none;
+}
+.header-item span i {
+    font-size: 12px;
+}
+.header-col .header-item:nth-child(3) {
+    display: none;
+}
+.header-col:nth-child(2)  {
+    align-items: end;
+}
+.header-icon {
+    gap: 10px;
+}
+.header-icon {
+    margin-left: 5px;
+}
+.header-icon a i {
+    font-size: 12px;
+}
+.navbar-Right-show {
+    width: 60%;
+    left: 40%;
+}
+@keyframes navbarSlide {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 40%;
+    }
+}
+/* -----------------------------Header Markup End ------------------------ */
+/* =============================Hero Markup Start======================== */
+#hero-markup {
+    padding: 150px 0 100px;
+}
+.hero-first-star {
+    top: 40px;
+}
+.hero-secound-star {
+    bottom: 15%;
+    right: 10%;
+}
+@keyframes star{
+    0%{
+        transform: scale(.5);
+    }100%{
+         transform: scale(1);
+    }
+}
+.hero-head {
+    font: 700 50px/1.2 var(--Default-Font);
+}
+/* -----------------------------Hero Markup End ------------------------ */
+/* =============================About Markup Start======================== */
+#about-us {
+    padding: 50px 0;
+}
+.common-head {
+    font: 700 36px/1.2 var(--Default-Font);
+    margin-top: 10px;
+}
+.about-button {
+    margin-top: 20px;
+}
+.about-content {
+    justify-content: space-between;
+    gap: 20px 0;
+}
+/* -----------------------------About Markup End ------------------------ */
+/* =============================Service Markup Start======================== */
+#service-markup {
+    padding: 50px 0;
+}
+.service-heading .common-head {
+    font-size: 36px;
+}
+.service-button{
+    margin-top: 20px;
+}
+.service-row {
+    gap: 15px;
+    margin-top: 50px;
+}
+.service-col {
+    padding: 20px;
+    max-width: 350px;
+}
+.service-col-title {
+    font: 600 22px/28px var(--Default-Font);
+    margin: 10px 0 5px;
+}
+#about-us::after {
+    display: none;
+}
+/* -----------------------------Service Markup End ------------------------ */
+/* =============================Team Markup Start======================== */
+.team-head::after, .team-head::before {
+	left: 58%;
+}
+.team-head::before {
+	left: 34%;
+}
+/* -----------------------------Team Markup End ------------------------ */
+/* =============================Contact Markup Start======================== */
+#contact-markup {
+    padding: 50px 0;
+}
+.contact-col {
+    width: 100%;
+}
+.contact-icon i {
+    width: 50px;
+    height: 50px;
+}
+.contact-info-text h3 {
+    font: 600 18px/24px var(--Default-Font);
+}
+.contact-info-text a {
+    font: 400 14px/20px var(--Default-Font);
+    margin-top: 0;
+}
+.contact-form-item {
+    flex-basis: 47%;
+}
+/* -----------------------------Contact Markup End ------------------------ */
+/* =============================Footer Markup Start======================== */
+#footer-markup {
+    padding: 60px 0 20px;
+}
+.footer-logo a picture img {
+    max-width: 80px;
+}
+.footer-summery {
+    font: 400 14px/20px var(--Default-Font);
+    margin: 15px 0 25px;
+}
+.footer-social-title {
+    font: 600 18px/28px var(--Default-Font);
+    margin: 40px 0 10px;
+}
+.footer-icon span {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+/* -----------------------------Footer Markup End ------------------------ */
+/* =============================Header Markup Start======================== */
+
+/* -----------------------------Header Markup End ------------------------ */
+/* =============================Header Markup Start======================== */
+
+/* -----------------------------Header Markup End ------------------------ */
+/* =============================Header Markup Start======================== */
+
+/* -----------------------------Header Markup End ------------------------ */
+
+
+
+
+
+
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+.container {
+    max-width: 960px;
+    padding: 0 10px;
+}
+/* =============================Header Markup Start======================== */
+.header-col {
+    gap: 10px;
+}
+.header-item {
+    padding: 0;
+    border-right: none;
+}
+.header-col:nth-child(2)  {
+    align-items: end;
+}
+.header-icon {
+    gap: 12px;
+}
+.header-icon {
+    margin-left: 5px;
+}
+.navbar-Right-show {
+    width: 60%;
+    left: 40%;
+}
+@keyframes navbarSlide {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 40%;
+    }
+}
+.hero-head {
+    font: 700 50px/1.2 var(--Default-Font);
+}
+/* -----------------------------Header Markup End ------------------------ */
+/* =============================About Markup Start======================== */
+.about-row {
+    flex-direction: column;
+}
+.common-head {
+    font: 700 36px/1.2 var(--Default-Font);
+    margin-top: 10px;
+}
+/* -----------------------------About Markup End ------------------------ */
+/* =============================Service Markup Start======================== */
+#service-markup {
+    padding: 50px 0;
+}
+.service-heading .common-head {
+    font-size: 36px;
+}
+.service-button{
+    margin-top: 20px;
+}
+.service-row {
+    gap: 15px;
+    margin-top: 50px;
+}
+.service-col-title {
+    font: 600 22px/28px var(--Default-Font);
+    margin: 10px 0 5px;
+}
+#about-us::after {
+	bottom: -40px;
+	left: 0px;
+	width: 52%;
+}
+/* -----------------------------Service Markup End ------------------------ */
+/* =============================Team Markup Start======================== */
+.team-head::after, .team-head::before {
+    left: 57%;
+}
+.team-head::before {
+    left: 37%;
+}
+/* -----------------------------Team Markup End ------------------------ */
+/* =============================Contact Markup Start======================== */
+#contact-markup {
+    padding: 50px 0;
+}
+.contact-summery {
+	max-width: 440px;
+}
+.contact-col {
+    width: 50%;
+}
+.contact-icon i {
+    width: 50px;
+    height: 50px;
+}
+.contact-info-text h3 {
+    font: 600 18px/24px var(--Default-Font);
+}
+.contact-info-text a {
+    font: 400 14px/20px var(--Default-Font);
+    margin-top: 0;
+}
+.contact-form-item {
+    flex-basis: 47%;
+}
+/* -----------------------------Contact Markup End ------------------------ */
+/* =============================Footer Markup Start======================== */
+.footer-logo a picture img {
+    max-width: 80px;
+}
+.footer-summery {
+    font: 400 14px/20px var(--Default-Font);
+    margin: 15px 0 25px;
+}
+.footer-social-title {
+    font: 600 18px/28px var(--Default-Font);
+    margin: 40px 0 10px;
+}
+.footer-icon span {
+    width: 40px;
+    height: 40px;
+}
+/* -----------------------------Footer Markup End ------------------------ */
+}
+@media (min-width: 1200px) and (max-width: 1260px) {
+.container {
+    max-width: 1200px;
+    padding: 0 10px;
+}
+}
